@@ -1,0 +1,42 @@
+.issue-container {
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    background-color: white;
+}
+
+/* add margin bottom to every issue execpt last */
+.issue-container:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.issue-accent-color {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 0;
+    background-color: #FF9A9A;
+}
+
+.issue-content {
+    color: #707070;
+    position: absolute;
+    right: 0;
+    /* subtract accent color div width */
+    /* also subract padding 20px 20px on each side */
+    width: calc(100% - 5px - 40px);
+    /* also subract padding 20px on height for padding top */   
+    height: calc(100% - 20px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.issue-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.issue-body {
+    font-size: 14px;
+}
