@@ -1,0 +1,52 @@
+.issue-modal-container {
+    z-index: 999;
+    top: 0;
+    position: absolute;
+    left: 0;
+    /* subtract padding amount */
+    width: calc(300px - 80px);
+    /* subtract padding amount */
+    height: calc(450px - 80px);
+    background-color: white;
+    box-shadow: 9px 10px 13px -8px rgba(0,0,0,0.18);
+    padding: 40px;
+}
+
+.issue-modal-selector {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #707070;
+    border-radius: 0px;
+    outline: none;
+}
+
+.issue-modal-textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    padding: 18px;
+    width: 100%;
+    height: calc(100% - 20px - 35px - 50px);
+    box-sizing: border-box;
+    margin-top: 20px;
+    resize: none;
+}
+
+.issue-modal-submit {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: #707070;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+    background-color: #FFC3C3;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}

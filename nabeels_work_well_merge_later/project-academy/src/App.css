@@ -1,0 +1,103 @@
+.app-content {
+  width: 100%;
+  height: calc(100% - 75px);
+  position: absolute;
+  top: 75px;
+}
+
+
+.editor-container {
+  height: 100%;
+  width: 65%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.editor-wrapper {
+  width: 100%;
+  /* 75 pixels from top and bottom */
+  height: calc(100% - 75px - 75px);
+  border-right: 1px solid #707070;
+  box-sizing: border-box;
+  padding-left: 75px;
+  padding-right: 75px;
+  overflow-y: scroll;
+}
+
+.editor {
+  width: 100%;
+  height: 100%;
+}
+
+.editor-title {
+  font-weight: bold;
+  color: #707070;
+  font-size: 24px;
+  width: 100%;
+  float: left;
+}
+
+.editor-body {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #707070;
+  float: left;
+  width: 100%;
+}
+
+.issues-container {
+  height: 100%;
+  /* subract 75px from both sides for padding */
+  width: calc(35%);
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.issues-wrapper {
+  /* 75 pixels from top and bottom */
+  height: calc(100% - 75px - 75px);
+  width: 100%;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.issues {
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+  position: relative;
+}
+
+.issues-title {
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: #707070;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.issues-body {
+  width: 100%;
+  /* subtract 50px from line height of issues title */
+  height: calc(100% - 50px - 50px);
+  overflow-y: scroll;
+}
+
+.issues-submit {
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: #707070;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+  background-color: #FFC3C3;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  cursor: pointer;
+}
